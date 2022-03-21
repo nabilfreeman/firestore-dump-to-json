@@ -1,0 +1,15 @@
+# deps
+node_modules
+
+# SECRET auth
+service-account.json
+
+# dump files
+dump
+dump*
+
+# processed output file
+firestore.json
+
+# random
+.DS_Store
