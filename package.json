@@ -2,9 +2,9 @@
   "name": "firebase-dumper",
   "version": "1.0.0",
   "description": "Dumps a firestore and converts it into a nested map similar to the browsable one in Firebase Console",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bash run.sh"
   },
   "author": "@nabilfreeman github",
   "license": "ISC",
