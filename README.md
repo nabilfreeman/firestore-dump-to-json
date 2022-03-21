@@ -20,7 +20,7 @@ npm install
 touch service-account.json
 
 # run and go get a coffee!
-npm start
+FIREBASE_APP_NAME=tiktok-production npm start
 ```
 
 Now you will have a file, `firestore.json` in your root directory which is a replica of your Firestore.
@@ -32,8 +32,8 @@ You can add `DUMP_PATTERNS` as an environment variable to speed up the export pr
 Specify it as a Regex string.
 
 ```
-# exclude any path that has "users_orders_join" in it, but let everything else through
-DUMP_PATTERNS='^(?!users_orders_join).*$' npm start
+# exclude any path that has "users_algorithm_join" in it, but let everything else through
+DUMP_PATTERNS='^(?!users_algorithm_join).*$' FIREBASE_APP_NAME=tiktok-production npm start
 ```
 
 Regex is usually a "whitelist" thing, but here negative lookaheads do work, so you can exclude a path and let everything else through.
